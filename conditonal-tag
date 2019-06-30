@@ -1,0 +1,26 @@
+index page
+<b:if cond='data:blog.pageType == "index"'>
+
+post page
+<b:if cond='data:blog.pageType == "item"'>
+
+static page
+<b:if cond='data:blog.pageType == "static_page"'>
+
+archive page
+<b:if cond='data:blog.pageType == "archive"'>
+
+homepage
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+
+specific page
+<b:if cond='data:blog.url == "PUT_URL_HERE"'>
+
+post/static page
+<b:if cond='data:blog.url == data:post.url'>
+
+search page
+<b:if cond='data:blog.searchLabel'>
+
+first post
+<b:if cond='data:post.isFirstPost'>
